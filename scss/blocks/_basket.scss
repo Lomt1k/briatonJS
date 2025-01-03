@@ -1,0 +1,35 @@
+.basket {
+  background-color: $color-white;
+  border-radius: 8px;
+  padding: 16px;
+  position: absolute;
+  right: 0;
+  top: calc(100% + 18px);
+  box-shadow: 0 10px 60px 0 #4848481A;
+  opacity: 0;
+  transform: translateY(-20px);
+  pointer-events: none;
+  transition: opacity $transition, transform $transition;
+  z-index: 10;
+
+  &--active {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: all;
+  }
+
+  &__empty-block {
+    text-align: center;
+    padding: 21px 20px;
+    width: 366px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+}

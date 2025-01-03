@@ -1,0 +1,39 @@
+.basket-card {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 60px 170px 76px 20px;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16.8px;
+  width: 366px;
+
+  &__img-wrap {
+    align-items: flex-start;
+    background-color: $color-white-smoke;
+    border-radius: 6px;
+    display: flex;
+    height: 60px;
+    justify-content: center;
+    width: 60px;
+    overflow: hidden;
+
+
+    img {
+      height: 60px;
+      object-fit: contain;
+      width: 60px;
+    }
+  }
+
+  &__close {
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
